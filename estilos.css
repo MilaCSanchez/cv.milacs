@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:3px;
+	padding:3px;
+}
+
+h1{
+	font-family: "Raleway", "Saira", "Rubik", "sans-serif";
+	font-weight:bold;
+	font-style: normal;
+	color:#6738C9;
+}
+
+h2{
+	font-size: 16px;
+	font-weight:bolder;
+	font-style:normal;
+}
+
+body {font-family:Raleway, Saira, Rubik, "sans-serif";
+	font-weight: normal;
+}
+
+#p {
+	text-align: justify;
+	line-height:inherit;
+}
+
+
+	
