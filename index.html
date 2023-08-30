@@ -5,33 +5,40 @@
 <title>cv Milagros Sanchez </title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
+
+<!-- buenos avances, hay que seguir metiendole a flexbox para llegar a mañana 10 puntos -->
+	
 <body>
 	<header>
-  		<article> 
-			<img src="img/foto de perfil.jpg" width="150px" height="200px" alt="foto cv"/>
+  		<article>  <!-- tanto en header como en footer no se utilizan sections, articles o asides, si necesitas hacer un grupo utilizá divs, pero en este caso no veo necesario el uso de este contenedor para la ing porque es autosuficiente -->
+			<img src="img/foto de perfil.jpg" width="150px" height="200px" alt="foto cv"/> <!-- guarda que estás usando espacios en el nombre del archivo! -->
 		</article>
   		<h1>Milagros Sanchez</h1>
   		<h2>Estudiante de Lic. Diseño y Comunicaci&oacute;n Visual</h2> 
 	</header>
 	<nav class="botonera">
 		<ul> 
-			<a href= "mila-sanchez.myportfolio.com" title="mail" target= “_blank” ><li>Proyectos</li></a>
-			<a href="mila.csanchez56@gmail.com" title="portfolio" target="_blank"><li> Contacto </li></a>
+			<a href= "mila-sanchez.myportfolio.com" title="mail" target= “_blank” ><li>Proyectos</li></a> <!-- delante del link tenés que sumarle https:// y con eso va a funcionar bien :D -->
+			<a href="mila.csanchez56@gmail.com" title="portfolio" target="_blank"><li> Contacto </li></a> <!-- los <li> tienen que contener a la <a> y no al revés -->
 		</ul>
 	</nav>
 	<main>
   		<section>
-   			 <h4>Sobre m&iacute;</h4>
+   			 <h4>Sobre m&iacute;</h4> <!-- guarda indentado!!! -->
     			<p id="p"> Actualmente estoy cursando materias del cuarto año de la carrera, motivada por crecer tanto en personal como en lo profesional. Me considero como una persona con entusiasmo por aprender, responsable y comprometida. Realizar deporte en equipo me enseñ&oacute; a comprender las din&aacute;micas de trabajar con personas por un objetivo.
 				</p>
   		</section>
-  		<aside></aside>
+  		<aside></aside> <!-- no está bueno dejar etiquetas vacías, si necesitás dejar un recordatorio para llenar después podés hacer un comentario -->
 		<section>
 			<h4>Estudios</h4>
 			<ul> 
 				<li>Licenciatura en Diseño y Comunicación Visual</li>
-				<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p>
-				<span> </span>
+				<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p> <!-- no pueden haber otras etiquetas dentro de una <ul> que no sean <li>, pero dentro de un <li> pueden haber otras etiquetas, por ejemplo:
+				<li>
+					<h85>Licenciatura en Diseño y Comunicación Visual</h85>
+					<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p>
+				</li>-->
+				<span> </span> <!-- cuaál es la función de este span vacío? -->
 				<li>Bachiller en Ciencias Sociales</li>
 				<p>2014 - 2019 | Instituto San Francisco de Asis</p>
 			</ul>
@@ -40,7 +47,7 @@
 			<h4>Experiencia Laboral</h4>
 			<ul> 
 				<li>Gestión de Redes Sociales</li>
-				<p> Junio 2023 | Freelance para cliente</p>
+				<p> Junio 2023 | Freelance para cliente</p> <!-- mismo error de las otras listas -->
 				<span> </span>
 				<li>Gestión de Redes Sociales</li>
 				<p> Julio 2022 | Sociedad de Fomento Darwin</p>
@@ -51,7 +58,7 @@
 		</section>
 		<section>
 			<h4> Habilidades informáticas</h4>
-			<ul>
+			<ul> <!-- esta lista está bien -->
 				<li> Paquete Office | Intermedio</li>
 				<li> Adobe Illustrator | Avanzado</li>
 				<li> Adobe InDesign | Avanzado</li>
@@ -66,8 +73,8 @@
 				<li> Buena adaptaci&oacute;n al trabajo en equipo</li>
 			</ul>
 		</section>
-</main>
-<footer>
+</main> <!-- guarda indentado!!! --> 
+<footer> <!-- guarda indentado!!! -->
 	<address>
 		<h5> Buenos Aires, Argentina</h5>
 		<h5> <a href="mila.csanchez56@gmail.com" title="mail" target="_blank">mila.csanchez56@gmail.com</a></h5>
