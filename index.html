@@ -5,67 +5,38 @@
 <title>cv Milagros Sanchez </title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
-
-<!-- buenos avances, hay que seguir metiendole a flexbox para llegar a mañana 10 puntos -->
-	
 <body>
-	<header>
-  		<article>  <!-- tanto en header como en footer no se utilizan sections, articles o asides, si necesitas hacer un grupo utilizá divs, pero en este caso no veo necesario el uso de este contenedor para la ing porque es autosuficiente -->
-			<img src="img/foto de perfil.jpg" width="150px" height="200px" alt="foto cv"/> <!-- guarda que estás usando espacios en el nombre del archivo! -->
-		</article>
-  		<h1>Milagros Sanchez</h1>
-  		<h2>Estudiante de Lic. Diseño y Comunicaci&oacute;n Visual</h2> 
+	<header class="flex-container">
+		<img src="img/fotocv.jpg" width="200" height="200" alt="fotocv.jpg" class="profile-imagen"/>
+		<section class="titulos">
+			<h1 class="flex-item-a">Milagros Sanchez</h1>
+			<h2 class="flex-item-b">Estudiante de Lic. Diseño y Comunicaci&oacute;n Visual</h2>
+		</section>
 	</header>
 	<nav class="botonera">
 		<ul> 
-			<a href= "mila-sanchez.myportfolio.com" title="mail" target= “_blank” ><li>Proyectos</li></a> <!-- delante del link tenés que sumarle https:// y con eso va a funcionar bien :D -->
-			<a href="mila.csanchez56@gmail.com" title="portfolio" target="_blank"><li> Contacto </li></a> <!-- los <li> tienen que contener a la <a> y no al revés -->
+			<li><a href= "https://mila-sanchez.myportfolio.com" title="portfolio" target= "_blank">Proyectos</a></li>
+			<li><a href="mila.csanchez56@gmail.com" title="mail" target="_blank"> Contacto</a></li>
 		</ul>
 	</nav>
 	<main>
-  		<section>
-   			 <h4>Sobre m&iacute;</h4> <!-- guarda indentado!!! -->
-    			<p id="p"> Actualmente estoy cursando materias del cuarto año de la carrera, motivada por crecer tanto en personal como en lo profesional. Me considero como una persona con entusiasmo por aprender, responsable y comprometida. Realizar deporte en equipo me enseñ&oacute; a comprender las din&aacute;micas de trabajar con personas por un objetivo.
-				</p>
+		<div class="columnas">
+		<section class="sobremi">
+			<h4>Sobre m&iacute;</h4>
+    			<p class="sobremi"> Actualmente estoy cursando materias del cuarto año de la carrera, motivada por crecer tanto en personal como en lo profesional. 
+				Me considero como una persona con entusiasmo por aprender, responsable y comprometida. Realizar deporte en equipo me enseñ&oacute; a comprender las din&aacute;micas de trabajar con personas por un objetivo.
+			</p>
   		</section>
-  		<aside></aside> <!-- no está bueno dejar etiquetas vacías, si necesitás dejar un recordatorio para llenar después podés hacer un comentario -->
-		<section>
-			<h4>Estudios</h4>
-			<ul> 
-				<li>Licenciatura en Diseño y Comunicación Visual</li>
-				<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p> <!-- no pueden haber otras etiquetas dentro de una <ul> que no sean <li>, pero dentro de un <li> pueden haber otras etiquetas, por ejemplo:
-				<li>
-					<h85>Licenciatura en Diseño y Comunicación Visual</h85>
-					<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p>
-				</li>-->
-				<span> </span> <!-- cuaál es la función de este span vacío? -->
-				<li>Bachiller en Ciencias Sociales</li>
-				<p>2014 - 2019 | Instituto San Francisco de Asis</p>
-			</ul>
-		</section>
-		<section>
-			<h4>Experiencia Laboral</h4>
-			<ul> 
-				<li>Gestión de Redes Sociales</li>
-				<p> Junio 2023 | Freelance para cliente</p> <!-- mismo error de las otras listas -->
-				<span> </span>
-				<li>Gestión de Redes Sociales</li>
-				<p> Julio 2022 | Sociedad de Fomento Darwin</p>
-				<span> </span>
-				<li> Colonia de Vacaciones en la Escuela</li>
-				<p> Enero 2021- Febrero 2021 | Ciudad de Buenos Aires</p>
-			</ul>
-		</section>
-		<section>
+		<section id="habilidades">
 			<h4> Habilidades informáticas</h4>
-			<ul> <!-- esta lista está bien -->
+			<ul>
 				<li> Paquete Office | Intermedio</li>
 				<li> Adobe Illustrator | Avanzado</li>
 				<li> Adobe InDesign | Avanzado</li>
 				<li> Adobe Photoshop | Avanzado</li>
 			</ul>
 		</section>
-		<section>
+		<section id="aptitudes">
 			<h4> Aptitudes</h4>
 			<ul>
 				<li> Creatividad</li>
@@ -73,15 +44,41 @@
 				<li> Buena adaptaci&oacute;n al trabajo en equipo</li>
 			</ul>
 		</section>
-</main> <!-- guarda indentado!!! --> 
-<footer> <!-- guarda indentado!!! -->
+		</div>
+		<div class="fila">
+		<section id="estudios">
+			<h4>Estudios</h4>
+			<ul> 
+				<li><h6>Licenciatura en Diseño y Comunicación Visual</h6>
+				<p>2020 - Presente | Universidad Nacional de Lan&uacute;s</p>
+	    		</li>
+				<li><h6>Bachiller en Ciencias Sociales</h6>
+				<p>2014 - 2019 | Instituto San Francisco de Asis</p>
+	   			</li>
+	  		</ul>
+		</section>
+		<section id="experiencia">
+			<h4>Experiencia Laboral</h4>
+			<ul> 
+				<li><h6>Gestión de Redes Sociales</h6>
+				<p> Junio 2023 | Freelance para cliente</p>
+				</li>
+				<li><h6>Gestión de Redes Sociales</h6>
+				<p> Julio 2022 | Sociedad de Fomento Darwin</p>
+				</li>
+				<li><h6>Colonia de Vacaciones en la Escuela</h6>
+				<p> Enero 2021- Febrero 2021 | Ciudad de Buenos Aires</p>
+				</li>
+			</ul>
+		</section>
+		</div>
+	</main>
+</body>
+<footer>
 	<address>
 		<h5> Buenos Aires, Argentina</h5>
-		<h5> <a href="mila.csanchez56@gmail.com" title="mail" target="_blank">mila.csanchez56@gmail.com</a></h5>
-		<h5><a href="mila-sanchez.myportfolio.com" title="portfolio" target="_blank">mila-sanchez.myportfolio.com </a></h5>
-		
+		<h5><a href="mila-sanchez.myportfolio.com" title="portfolio" target="_blank">mila-sanchez.myportfolio.com</a></h5>
+		<h5><a href="mila.csanchez56@gmail.com" title="mail" target="_blank">mila.csanchez56@gmail.com</a></h5>
 	</address>
-
 </footer>
-</body>
 </html>
