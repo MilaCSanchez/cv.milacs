@@ -2,17 +2,15 @@
 /* CSS Document */
 
 *{
-	marging: 0px;
-	padding: 0px;
+	marging: 0%;
+	padding: 0%
 }
 
-#header{
-	width: 100%;
-	height: 100%;
-	background-image: url("img/fondo header-04.jpg");
-	background-size: cover;
-	background-position: center;
+.header{
+	display: flex;
+	flex-direction: column;
 }
+
 
 .profile-imagen{
 	border-radius: 100%;
@@ -38,17 +36,12 @@
 	height: 90px;
 	background-color:#5F388A;
 	align-items: center;
-	justify-content: space-between;
-	padding: 5px
+	justify-content:space-evenly;
 }
 
 .botonera a:hover{
 	color:aliceblue;
 	background-color: #6738C9;
-}
-
-header{
-	background:#A6AAD5;
 }
 
 nav ul {
@@ -85,8 +78,13 @@ h2{
 	font-style: normal;
 }
 
-body {font-family:Raleway, Saira, Rubik, "sans-serif";
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family:Raleway, Saira, Rubik, "sans-serif";
 	font-weight: normal;
+	padding: 0px;
 }
 
 main{
