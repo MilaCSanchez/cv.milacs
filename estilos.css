@@ -18,11 +18,19 @@
 /*animaciones*/
 
 .animacion{
-	
+	margin-top: 80px;
+}
+#sol2{
+	animation: sol2 0.8s linear both;
 }
 
-#petalos{
-	
+@keyframes sol2{
+	0% {
+		transform:rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+  }
 }
 
 /*fin de animaciones*/
