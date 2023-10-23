@@ -14,6 +14,7 @@
 	background-image: url("img/SVG/fondoheader.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: sticky;
 }
 /*animaciones*/
 
@@ -60,6 +61,7 @@
 	background-color:#5F388A;
 	align-items: center;
 	justify-content:space-evenly;
+	position: fixed;
 }
 
 .botonera a:hover{
@@ -105,23 +107,28 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-family:Raleway, Saira, Rubik, "sans-serif";
+	font-family: Raleway, Saira, Rubik, "sans-serif";
 	font-weight: normal;
 
 }
 
 main{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	align-content: space-around;
+	background-color: #5F388A;
+	
 }
 
 .nombre{
 	display:flex;
-	background:#F1ECE6;
-	border-radius: 1.5%;
+	align-items: flex-start;
+	background:#ADA3C5;
+	border-radius: 12px;
+	margin-top: 50px;
 }
 .sobremi {
 	max-width: 90%;
@@ -152,7 +159,7 @@ main{
 
 #aptitudes{
 	border: 1px solid #6738C9;
-	border-radius: 5%;
+	border-radius: 12px;
 	padding: 10px 20px;
 }
 
