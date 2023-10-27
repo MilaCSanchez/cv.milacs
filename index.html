@@ -5,6 +5,17 @@
 <title>cv Milagros Sanchez </title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link  rel="icon"  type="image/png"  href="img/favicon.png"> 
+<script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
 </head>
 <body>
 	<header class="header">
@@ -67,29 +78,34 @@
 				</div>
 			</div>
 		</div>
+		<h1>Proyectos</h1>
 		<section id="miniaturas">
-			<a href="#foto-1"><img src="img/foto1-thumbnail.jpg" width="200px" height="200px" alt="Punto de Fuga"></a>
-			<a href="#foto-2"><img src="img/foto-2-thumbnail.jpg" width="200px" height="200px" alt="Venus Lettering"></a>
-			<a href="#foto-3"><img src="img/foto-3-thumbnail.jpg" width="200px" height="200px" alt="Lata Fila"></a>
-			<a href="#foto-4"><img src="img/foto-4-thumbnail.jpg" width="200px" height="200px" alt="Kaolin"></a>
+			<a href="#foto-1"><img src="img/foto1-thumbnail.jpg" width="200px" height="200px" alt="Punto de Fuga" onClick="mostrarGaleria()"></a>
+			<a href="#foto-2"><img src="img/foto-2-thumbnail.jpg" width="200px" height="200px" alt="Venus Lettering" onClick="mostrarGaleria()"></a>
+			<a href="#foto-3"><img src="img/foto-3-thumbnail.jpg" width="200px" height="200px" alt="Lata Fila" onClick="mostrarGaleria()"></a>
+			<a href="#foto-4"><img src="img/foto-4-thumbnail.jpg" width="200px" height="200px" alt="Kaolin" onClick="mostrarGaleria()"></a>
 		</section>
 		<section id="galeria">
 		<ul id="galeria-oculta">
 				<li class="fraccion-galeria" id="foto-1">
 						<a href="#" class="primer-ultima-flecha"><img src="img/flecha1.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="img/cerrar.png" alt="Cerrar" width="50px" height="50px">
+						<img class="close" src="img/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 						<a href="#foto-2"><img src="img/flecha2.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				</li>
 				<li class="fraccion-galeria" id="foto-2">
-						<a href="#foto-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></
-						<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px">
-						<a href="#foto-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+					<a href="#foto-1"><img src="img/flecha1.png" width="50px" height="50px" alt="Anterior"></a>
+						<img class="close" src="img/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#foto-3"><img src="img/flecha2.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 				<li class="fraccion-galeria" id="foto-3">
-						<a href="#foto-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px">
-						<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+						<a href="#foto-2"><img src="img/flecha1.png" width="50px" height="50px" alt="Anterior"></a>
+						<img class="close" src="img/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#foto-4" class="primer-ultima-flecha"><img src="img/flecha2.png" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-4">
+						<a href="#foto-3"><img src="img/flecha1.png" width="50px" height="50px" alt="Anterior"></a>
+						<img class="close" src="img/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#" class="primer-ultima-flecha"><img src="img/flecha2.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 		</ul>
 		</section>
