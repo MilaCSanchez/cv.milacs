@@ -4,6 +4,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
+	cursor: url("img/cursor.png"), auto;
 }
 
 .header{
@@ -271,4 +272,55 @@ h5{
 	font-style: normal;
 	font-size: 14px;
 	color: #6738C9;
+}
+/*formulario------------------------*/
+
+.label {
+	width:30%;
+	display: inline-block;
+}
+
+.divisionesform{
+	margin: 10px;
+	padding: 10px 0px 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+input, textarea {
+	width: 30%;
+	border: none;
+	background: #ccc;
+	padding:10px;
+	outline: none;
+	height: 30px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input:hover, textarea:hover {
+	background: #aaa;
+}
+
+
+input:focus, textarea:focus {
+	background: rgba(255,0,0,.2);
+}
+
+button {
+	background: black;
+	border: none;
+	padding: 5px;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	background: rgba(255,0,0,.5); 
+}
+
+button:active {
+	background: rgba(255,0,0,1);
 }
