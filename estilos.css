@@ -42,13 +42,6 @@
     transform: rotate(360deg);
   }
 } 
-	/*animation-name:sol1;
-	animation-duration: 4s;
-	animation-timing-function: ease-in;
-	animation-direction: normal;
-	animation-iteration-count: infinite;
-}*/
-
 
 @keyframes sol2{
 	0% {
@@ -187,6 +180,10 @@ main{
 	color:#FFFFFF;
 	
 }
+.sobremi{
+	margin-top: 20px;
+}
+
 .fila{
 	display: flex;
 	justify-content: space-between;
@@ -206,12 +203,12 @@ main{
 	flex-basis: 60%;
 }
 
-.subtitulos{
+.tab-titles{
 	display: flex;
-	margin: 20px 0 40px;
+	margin: 20px 0 30px;
 }
 
-.sub-links{
+.tab-links{
 	margin-right: 50px;
 	font-size: 18px;
 	font-weight: 500;
@@ -219,7 +216,7 @@ main{
 	position: relative;
 }
 
-.sub-links::after{
+.tab-links::after{
 	content:'';
 	width: 0;
 	height: 3px;
@@ -229,22 +226,34 @@ main{
 	bottom: -8px;
 	transition: 0.5s;
 }
-.sub-links.activar-link::after{
+.tab-links.active-link::after{
 	width: 50%;
 }
 
-.tab-contenido ul li{
+.tab-contents ul li{
 	list-style:none;
 	margin: 10px 0;
 	line-height: 1.6
 }
 
-.tab-contenido ul li span{
+.tab-contents ul li span{
 	color:#F0A743;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bolder;
 	line-height: 1.6;
 }
+
+.tab-contents{
+	display: none;
+}
+
+.tab-contents.active-tab{
+	display: block;
+}
+
+
+
+
 
 /*sobremi------------------------*/
 

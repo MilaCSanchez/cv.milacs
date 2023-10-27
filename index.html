@@ -33,14 +33,14 @@
 						<img src="img/fotocv.jpg" alt="fotocv.jpg">
 					</div>
 					<div class="sobremi-col-2">
-						<h1>Sobre mi</h1>
-						<p class="sobremi"> Actualmente estoy cursando materias del cuarto año de la carrera, <br>motivada por crecer tanto en personal como en lo profesional. <br>Me considero como una persona con entusiasmo por aprender, <br>responsable y comprometida.</p>
-					<div class="subtitulos">
-						<p class="sub-links activar-link">Aptitudes</p>
-						<p class="sub-links">Habilidades</p>
-						<p class="sub-links">Educaci&oacute;n</p>
+						<h1>Hola! Soy Mila</h1>
+						<p class="sobremi"> Me llamo Milagros SanchezActualmente estoy cursando materias del cuarto año de la carrera, <br>motivada por crecer tanto en personal como en lo profesional. <br>Me considero como una persona con entusiasmo por aprender, <br>responsable y comprometida.</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onClick="opentab('Aptitudes')">Aptitudes</p>
+						<p class="tab-links" onClick="opentab('Habilidades')">Habilidades</p>
+						<p class="tab-links" onClick="opentab('Educación')">Educación</p>
 					</div>
-					<div class="tab-contenido">
+					<div class="tab-contents active-tab" id="Aptitudes">
 						<ul>
 							<li><span>Branding</span><br>Creación de marca</li>
 							<li><span>Tipograf&iacute;a</span><br>Diseño de lettering y propuestas tipográficas</li>
@@ -48,11 +48,40 @@
 							<li><span>Ilustraci&oacute;n</span><br>Ilustraciones pintadas y digitalizadas</li>
 						</ul>
 					</div>
+					<div class="tab-contents" id="Habilidades">
+						<ul>
+							<li><span>Photoshop</span><br>Avanzado</li>
+							<li><span>Illustrator</span><br>Avanzaado</li>
+							<li><span>Indesign</span><br>Avanzado</li>
+							<li><span>Figma</span><br>Intermedio</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="Educación">
+						<ul>
+							<li><span>Licenciatura Diseño y Comunicaci&oacute;n Visual</span><br>2020 - Presente | Universidad Nacional de Lan&uacute;s</li>
+							<li><span>Bachiller en Ciencias Sociales</span><br>2014 - 2019 | Instituto San Francisco de Asis</li>
+						</ul>
+					</div>
 				 	</div>
 				</div>
 			</div>
 		</div>
 	</main>
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		
+		function opentab(tabname){
+			for(tablinks of tablinks){
+				tablinks.classList.remove("active-link");
+			}
+			for(tabcontents of tabcontents){
+				tabcontents.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
 </body>
 <footer>
 	<address>
